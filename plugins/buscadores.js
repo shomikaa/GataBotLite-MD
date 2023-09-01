@@ -22,7 +22,7 @@ const isCommand3 = /^(bot|simi|simsimi|alexa|bixby|cortana|siri|okgoogle)$/i.tes
 const isCommand4 = /^(githubstalk|usuariogithub|usergithub)$/i.test(command)
 const isCommand5 = /^(yt(s|search))$/i.test(command)
 const isCommand6 = /^(translate|traducir|trad)$/i.test(command)
-const isCommand7 = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|gatavoz|GataBotvoz|gptvoz|ai_voz|ai_voce)$/i.test(command)
+const isCommand7 = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|gatavoz|ConerosPosivoz|gptvoz|ai_voz|ai_voce)$/i.test(command)
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 async function reportError(e) {
@@ -158,19 +158,19 @@ let tes = results.all
 let teks = results.all.map(v => {
 switch (v.type) {
 case 'video': return `
-⁖❤️꙰༻ *${lenguajeGB.smsytserh1()}*
+⁖🦎 *${lenguajeGB.smsytserh1()}*
 » ${v.title || lenguajeGB.smsGit14()}
 
-⁖🩵꙰༻ *${lenguajeGB.smsytserh2()}*
+⁖🦎 *${lenguajeGB.smsytserh2()}*
 » ${v.url || lenguajeGB.smsGit14()}
 
-⁖💜꙰༻ *${lenguajeGB.smsytserh3()}*
+⁖🦎 *${lenguajeGB.smsytserh3()}*
 » ${v.timestamp || lenguajeGB.smsGit14()}
 
-⁖💚꙰༻ *${lenguajeGB.smsytserh4()}*
+⁖🦎 *${lenguajeGB.smsytserh4()}*
 » ${v.ago || lenguajeGB.smsGit14()}
 
-⁖🧡꙰༻ *${lenguajeGB.smsytserh5()}*
+⁖🦎 *${lenguajeGB.smsytserh5()}*
 » ${v.views || lenguajeGB.smsGit14()}`.trim()
 }}).filter(v => v).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
 await conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m)
