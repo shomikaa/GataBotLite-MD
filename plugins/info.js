@@ -17,13 +17,13 @@ frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCreApoy
 fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 const isCommand1 = /^(estado|status|estate|state|stado|stats|botstat(us)?)$/i.test(command)  
-const isCommand2 = /^(cuenta(s)?oficiales?|gataig|(cuentas|account)s?g?b|(ig)?gata|(cuentasgata))$/i.test(command)  
+const isCommand2 = /^(cuenta(s)?oficiales?|sxrgioig|(cuentas|account)s?g?b|(ig)?sxrgio|(-))$/i.test(command)  
 const isCommand3 = /^(gata(bot)?groups?|grupos(ofc|degatabot|gb)|grupogb|groupsgb|gatagroups?|grupos|group(ofc|sofc))$/i.test(command) 
 const isCommand4 = /^(c(ó|o)digo|sc|git|script)$/i.test(command) 
 const isCommand5 = /^(instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot)$/i.test(command) 
-const isCommand6 = /^(owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i.test(command) 
+const isCommand6 = /^(owner|creator|propietario|dueño|dueña|propietari|dueño|creador|creador)$/i.test(command) 
 const isCommand7 = /^(group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista)$/i.test(command) 
-const isCommand8 = /^(info(gata|bot)|informaci(ón|on)(gata|bot))$/i.test(command) 
+const isCommand8 = /^(info(conerospositive|bot)|informaci(ón|on)(conerospositive|bot))$/i.test(command) 
 const isCommand9 = /^(contactos?|contacts?)$/i.test(command) 
 const isCommand10 = /^(ping|speed|velocidad|rapidez|velocity)$/i.test(command) 
 const isCommand11 = /^(dona(te|si)|donar|apoyar|paypal|donating|aportar)$/i.test(command) 
@@ -48,14 +48,14 @@ rtotalreg = Object.values(global.db.data.users).filter(user => user.registered =
 try{
 let estado = `*╭𝄗𝄗✦ --${lenguajeGB.smsEstado1()}-- ✦𝄗𝄗⬣*
  ⎸ *⍟ ${lenguajeGB.smsEstado2()}*
- ⎸ ❉ ➺ ${vs}
+ ⎸ 🕸 ➺ ${vs}
  ⎸ ┈┈┈┈┈┈┈┈┈┈┈
- ⎸ ❉ *${lenguajeGB.smsEstado3()}* ➺ *_${Object.keys(global.db.data.users).length}_*
- ⎸ ❉ *${lenguajeGB.smsEstado4()}* ➺ *_${rtotalreg}/${totalreg}_*
- ⎸ ❉ *${lenguajeGB.smsEstado5()}* ➺ *_${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_* 
- ⎸ ❉ *${lenguajeGB.smsEstado6()}* ➺ *_${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_* 
+ ⎸ 🕸 *${lenguajeGB.smsEstado3()}* ➺ *_${Object.keys(global.db.data.users).length}_*
+ ⎸ 🕸 *${lenguajeGB.smsEstado4()}* ➺ *_${rtotalreg}/${totalreg}_*
+ ⎸ 🕸 *${lenguajeGB.smsEstado5()}* ➺ *_${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_* 
+ ⎸ 🕸 *${lenguajeGB.smsEstado6()}* ➺ *_${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_* 
  ⎸ ┈┈┈┈┈┈┈┈┈┈┈
- ⎸ ❉ *${lenguajeGB.smsEstado7()}* ➺ *_${uptime}_*
+ ⎸ 🕸 *${lenguajeGB.smsEstado7()}* ➺ *_${uptime}_*
 *╰𝄗𝄗𝄗𝄗𝄗⬣*`.trim()
 await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', estado, fkontak)
 } catch (e) {
@@ -67,16 +67,16 @@ case isCommand2:
 try{
 let media = './media/menus/Menu2.jpg'
 let str = `
-◎ *GITHUB*
+◎ *TELEGRAM*
 *${md}*\n
 ◎ *INSTAGRAM*
 *${ig}*\n
-◎ *YOUTUBE*
+◎ *-*
 *${yt}*\n
 ◎ *FACEBOOK*
 *${fb}*\n
 ${lenguajeGB.smsOfc2()}`.trim() 
-await conn.sendFile(m.chat, media, 'gata.jpg', lenguajeGB.smsOfc1() + '\n\n' + str, fkontak)  
+await conn.sendFile(m.chat, media, 'menu1.jpg', lenguajeGB.smsOfc1() + '\n\n' + str, fkontak)  
 } catch (e) {
 reportError(e)
 }    
@@ -86,18 +86,18 @@ break
 try{
 let str = `
 ${lenguajeGB.smsGrupoOfc1()}
-_⭔ ${grupo[0]}_\n
-_⭔ ${grupo[1]}_\n
-_⭔ ${grupo[2]}_\n
-_⭔ ${grupo[3]}_\n
-_⭔ ${grupo[4]}_\n
-_⭔ ${grupo[5]}_\n\n
+_🕸 ${grupo[0]}_\n
+_🕸 ${grupo[1]}_\n
+_🕸 ${grupo[2]}_\n
+_🕸 ${grupo[3]}_\n
+_🕸 ${grupo[4]}_\n
+_🕸 ${grupo[5]}_\n\n
 ${lenguajeGB.smsGrupoOfc2()}
-_⭔ ${grupo[6]}_\n
-_⭔ ${grupo[7]}_\n
-_⭔ ${grupo[8]}_\n
-_⭔ ${grupo[9]}_`.trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', str, fkontak)   
+_🕸 ${grupo[6]}_\n
+_🕸 ${grupo[7]}_\n
+_🕸 ${grupo[8]}_\n
+_🕸 ${grupo[9]}_`.trim()
+await conn.sendFile(m.chat, gataImg.getRandom(), 'menu1.jpg', str, fkontak)   
 } catch (e) {
 reportError(e)
 }    
@@ -106,7 +106,7 @@ break
 case isCommand4:
 try{ 
 _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', `*_${_package.homepage}_*\n\n` + lenguajeGB.smsPrivadoDonar(), fkontak)    
+await conn.sendFile(m.chat, gataImg.getRandom(), 'menu1.jpg', `*_${_package.homepage}_*\n\n` + lenguajeGB.smsPrivadoDonar(), fkontak)    
 } catch (e) {
 reportError(e)
 }    
@@ -160,7 +160,7 @@ _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')
 let pp = await conn.profilePictureUrl(`${global.conn.user.jid.split`@`[0]}` + '@s.whatsapp.net', 'image').catch(_ => gataImg.getRandom())
 let aa = `*_🍄 ${lenguajeGB.smsCreA()} ${taguser}, ${lenguajeGB.smsCreB()} ${_package.name} ${lenguajeGB.smsCreC()}_*\n\n` 
 let bb = `${packname}\n*◎ Wa.me/${owner[0][0]}*\n\n`
-await conn.sendFile(m.chat, pp, 'gata.jpg', aa + bb + ig, fkontak) 
+await conn.sendFile(m.chat, pp, 'menu1.jpg', aa + bb + ig, fkontak) 
 } catch (e) {
 reportError(e)
 }    
@@ -202,19 +202,19 @@ let speed = neww - old
 
 let info = `
 *${lenguajeGB.smsCreInfo().slice(0, -1)}*
-🌺꙰᠁❥ *◜${lenguajeGB.smsBT1()}◞* ⇢ ${author}
-🌼꙰᠁❥ *◜${lenguajeGB.smsBT2()}◞* ⇢ ${vs}
-🌺꙰᠁❥ *◜${lenguajeGB.smsBT3()}◞* ⇢ ( ${usedPrefix} )
-🌻꙰᠁❥ *◜${lenguajeGB.smsBT4()}◞* ⇢ ${chats.length - groups.length}
-🌼꙰᠁❥ *◜${lenguajeGB.smsBT5()}◞* ⇢ ${groups.length}
-🌺꙰᠁❥ *◜${lenguajeGB.smsBT6()}◞* ⇢ ${chats.length}
-🌻꙰᠁❥ *◜${lenguajeGB.smsBT7()}◞* ⇢ ${uptime}
-🌼꙰᠁❥ *◜${lenguajeGB.smsBT8()}◞* ⇢ ${totalreg}
-🌺꙰᠁❥ *◜${lenguajeGB.smsEstado4().toUpperCase()}◞* ⇢ ${rtotalreg}/${totalreg}
-🌻꙰᠁❥ *◜${lenguajeGB.smsVl1()}◞* ⇢ ${(speed * 1000).toFixed(0) / 1000}
-🌼꙰᠁❥ *◜${lenguajeGB.smsBT9()}◞* ⇢ ${totaljadibot.length}`.trim()
+🌬 *◜${lenguajeGB.smsBT1()}◞* ⇢ ${author}
+🌬 *◜${lenguajeGB.smsBT2()}◞* ⇢ ${vs}
+🌬${lenguajeGB.smsBT3()}◞* ⇢ ( ${usedPrefix} )
+🌬${lenguajeGB.smsBT4()}◞* ⇢ ${chats.length - groups.length}
+🌬${lenguajeGB.smsBT5()}◞* ⇢ ${groups.length}
+🌬${lenguajeGB.smsBT6()}◞* ⇢ ${chats.length}
+🌬${lenguajeGB.smsBT7()}◞* ⇢ ${uptime}
+🌬${lenguajeGB.smsBT8()}◞* ⇢ ${totalreg}
+🌬${lenguajeGB.smsEstado4().toUpperCase()}◞* ⇢ ${rtotalreg}/${totalreg}
+🌬${lenguajeGB.smsVl1()}◞* ⇢ ${(speed * 1000).toFixed(0) / 1000}
+🌬${lenguajeGB.smsBT9()}◞* ⇢ ${totaljadibot.length}`.trim()
 
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', info, fkontak) 
+await conn.sendFile(m.chat, gataImg.getRandom(), 'menu1.jpg', info, fkontak) 
 } catch (e) {
 reportError(e)
 }     
@@ -338,7 +338,7 @@ await m.reply(lenguajeGB.smsReportGB5())
 break
 }}
 
-handler.command = /^(estado|status|estate|state|stado|stats|botstat(us)?|cuenta(s)?oficiales?|gataig|(cuentas|account)s?g?b|(ig)?gata|(cuentasgata))|gata(bot)?groups?|grupos|groupsgb|grupos(ofc|degatabot|gb)|grupogb|gatagroups?|group(ofc|sofc)|c(ó|o)digo|sc|git|script|instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador|group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista|info(gata|bot)|informaci(ón|on)(gata|bot)|contactos?|contacts?|ping|speed|velocidad|rapidez|velocity|dona(te|si)|donar|apoyar|paypal|donating|aportar|report|request|reporte|bugs|bug|reportowner|reportes|reportar$/i
+handler.command = /^(estado|status|estate|state|stado|stats|botstat(us)?|cuenta(s)?oficiales?|Sxrgioig|(cuentas|account)s?g?b|(ig)?gata|(Sxrgioig))|Sxrgioig(bot)?groups?|grupos|groupsgb|grupos(ofc|degatabot|gb)|grupogb|gatagroups?|group(ofc|sofc)|c(ó|o)digo|sc|git|script|instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot|owner|creator|propietario|dueño|dueño|propietario|dueño|creador|creador|group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista|info(gata|bot)|informaci(ón|on)(gata|bot)|contactos?|contacts?|ping|speed|velocidad|rapidez|velocity|dona(te|si)|donar|apoyar|paypal|donating|aportar|report|request|reporte|bugs|bug|reportowner|reportes|reportar$/i
 export default handler
 
 function clockString(ms) {
