@@ -3,8 +3,8 @@ import axios from 'axios'
  let handler = async (m, {  
  conn, text, command, usedPrefix 
  }) => { 
- if (!text) return m.reply(`*INGRESE UN ENLACE*\n\nFORMA CORRECTA DE USAR *${usedPrefix + command}* <url>\n\n*EJEMPLO :* ${usedPrefix + command} https://github.com/GataNina-Li`) 
- m.reply("*🚀 C A R G A N D O . . .*") 
+ if (!text) return m.reply(`*INGRESE UN ENLACE*\n\nFORMA CORRECTA DE USAR *${usedPrefix + command}* <url>\n\n*EJEMPLO :* ${usedPrefix + command} https://facebook.com/qpaltacsm`) 
+ m.reply("*🚀 𝐂𝐨𝐧𝐞𝐫𝐨𝐬𝐏𝐨𝐬𝐭𝐢𝐯𝐞...*") 
  var phone = await ssweb(text, 'phone') 
  var desktop = await ssweb(text, 'desktop') 
  var tablet = await ssweb(text, 'tablet') 
