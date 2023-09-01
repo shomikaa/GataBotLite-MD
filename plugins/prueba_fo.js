@@ -14,19 +14,19 @@ text = `${m.mentionedJid.map((user)=>(user === m.sender) ? text.replace('@', '')
 if (/[a-zA-Z]/.test(text) && !text.includes('@')) return conn.reply(m.chat, `*El mensaje no puede estar sin etiquetar y solo puede etiquetar o responder al mensaje*`, m)
 text = text.match(/[\d@]+/g).join('')
   
-let coger = `🥵 *Acaban de coger a ${text}* 🥵 
+let coger = `🥵 *Acaban de kchar a ${text}* 🥵 
 
-*${text} ¡te han cogido!* 😏
+*${text} ¡te han kchado pipipi!* 😏
 
 *${cometido}*
 ●
 █▄
 █ ▄█▀█● *${text}*
-*¡Te han cogido!* 😫🍆`.trim()
+*¡Te han kchado!* 😫🍆`.trim()
 
-await conn.reply(m.chat, coger, m, { mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] })
+await conn.reply(m.chat, kchar, m, { mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] })
 }
 
-handler.command = /^(coger|follar)$/i
+handler.command = /^(kchar|tirar)$/i
 export default handler*/
 
