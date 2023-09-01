@@ -85,7 +85,7 @@ global.chatgpt.chain = lodash.chain(global.chatgpt.data)
 }
 loadChatgptDB()
 
-global.authFile = `GataBotSession`;
+global.authFile = `ConerosBotSession`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { }
 const {version} = await fetchLatestBaileysVersion()
@@ -111,7 +111,7 @@ auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, pino({level: 'silent'})),
 },
-browser: ['GataBotLite-MD','Edge','2.0.0'],
+browser: ['ConerosPositiveBot','Edge','2.0.0'],
 version,
 defaultQueryTimeoutMs: undefined,
 }
@@ -307,13 +307,13 @@ unlinkSync(filePath)})
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./GataBotSession")
+let directorio = readdirSync("./ConerosBotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') || file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./GataBotSession/${files}`)
+unlinkSync(`./ConerosBotSession/${files}`)
 })
 } 
 
