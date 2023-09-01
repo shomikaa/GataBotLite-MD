@@ -107,19 +107,19 @@ let res = await conn.query({ tag: 'iq', attrs: { type: 'get', xmlns: 'w:g2', to:
 data = extractGroupMetadata(res),
 txt = Object.keys(data).map(v => `*${v.capitalize()}:* ${data[v]}`).join('\n')
 let groupinfo = `
-🌺 ${lenguajeGB.smsInsGC1()}
+🐳 ${lenguajeGB.smsInsGC1()}
 → ${data.id === undefined ? '❌' : data.id}
 
-🌸 ${lenguajeGB.smsInsGC2()}
+🐳 ${lenguajeGB.smsInsGC2()}
 → ${data.subject === undefined ? '❌' : data.subject}
 
-🌼 ${lenguajeGB.smsInsGC3()}
+🐳 ${lenguajeGB.smsInsGC3()}
 → ${data.creation === undefined ? '❌' : data.creation}
 
-🌻 ${lenguajeGB.smsInsGC4()}
+🐳 ${lenguajeGB.smsInsGC4()}
 → ${data.owner === undefined ? '❌' : data.owner}
 
-🌹 ${lenguajeGB.smsInsGC5()}
+🐳 ${lenguajeGB.smsInsGC5()}
 → ${data.desc === undefined ? '❌' : data.desc}
 `.trim()
 await conn.sendFile(m.chat, gataImg.getRandom(), 'error.jpg', groupinfo, m)
@@ -145,7 +145,7 @@ let cont, action, body, rege
 rege = /^[-+.(@)~ 0-9]+$/
 switch (cmd) {	
 case "saludar":
-cont = ['https://pa1.narvii.com/6177/9d35b3265578df4e4092d67c9a7a5619cd1d41d0_hq.gif', 'https://media.tenor.com/FJzcVnWgHjgAAAAM/wave.gif', 'https://media.tenor.com/XMvXpoXRgIUAAAAi/anko-kitashirakawa-tamako-market.gif', 'https://media.tenor.com/MmTMEtRSIOUAAAAC/nijima-ibuki-d4dj-first-mix.gif', 'https://media.tenor.com/DDnp-TLMTWQAAAAC/hello-anime.gif'].getRandom()
+cont = ['https://media.tenor.com/q8SjshK1FhUAAAAd/cuca-charmbible.gif', 'https://media.tenor.com/UpdfCsgdwKoAAAAC/cuca-cuca-the-alligator.gif', 'https://media.tenor.com/5Kd3Uo8RmbQAAAAC/lizard-man-hand-gestures.gif', 'https://media.tenor.com/Wh9fUfTjVpkAAAAC/reptile-star-trek.gif', 'https://media.tenor.com/uHpq91erZKEAAAAd/lizard-whats-up.gif'].getRandom()
 action = `${conn.getName(m.sender)} está 👋 saludando a ${conn.getName(text.replace('@', '') + '@s.whatsapp.net')}
 ${rege.test(conn.getName(m.sender)) == true || rege.test(conn.getName(text.replace('@', '') + '@s.whatsapp.net')) == true ? `` : `\n\n• ${conn.getName(m.sender)} ➜ ${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}
 • ${conn.getName(text.replace('@', '') + '@s.whatsapp.net')} ➜ ${PhoneNumber('+' + text.replace('@', '') + '@s.whatsapp.net'.replace('@s.whatsapp.net', '')).getNumber('international')}`}`.trim()
