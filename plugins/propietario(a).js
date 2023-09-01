@@ -242,7 +242,7 @@ for (let id of users) {
 await delay(1500)
 await conn.copyNForward(id, content, true)
 }
-let difuUser = `${users.map(v => '🌺 wa.me/' + v.replace(/[^0-9]/g, '') + `?text=${encodeURIComponent(usedPrefix)}estado`).join('\n')}`
+let difuUser = `${users.map(v => '👨‍🦽 wa.me/' + v.replace(/[^0-9]/g, '') + `?text=${encodeURIComponent(usedPrefix)}estado`).join('\n')}`
 let tolUser = users.length * 1.5
 let numUser = users.length
 await conn.reply(m.chat, lenguajeGB.smsJBDifu2(numUser, difuUser, tolUser).trim(), m)        
