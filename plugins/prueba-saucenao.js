@@ -153,7 +153,7 @@ await conn.sendButton(m.chat, `*Número de resultados:* ${results.length}
 *Autor*
 • ${primerResultado.data.member_name === undefined ? 'No encontrado' : primerResultado.data.member_name}\n`,  `*◎ I N F O  A D I C C I O N A L*
 
-${resultadoEnBruto}`.trim(), url, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, frep)
+${resultadoEnBruto}`.trim(), url, [['𝗠 𝗘 𝗡 𝗨 🦎', '/menu']], m, frep)
 } catch (e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
