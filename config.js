@@ -13,9 +13,9 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 // EN ➜ Add the Bot number as priority first
 // EN ➜ If you want to receive reports you must use the three parameters (Number, name and true)
 global.owner = [
-['51977757632', '𝕮𝖔𝖓𝖊𝖗𝖔𝖘𝕻𝖔𝖘𝖙𝖎𝖛𝖊🦎', true],
-['51977757632', '𝙊𝙬𝙣𝙚𝙧 💖', true], 
-['51977757632'], ['51977757632'], ['51977757632'], ['51977757632']]
+['51918449789', '𝐁𝐨𝐭𝐩𝐲<𝟑', true],
+['51918449789', '𝙊𝙬𝙣𝙚𝙧 💖', true], 
+['51918449789'], ['51918449789'], ['51918449789'], ['51918449789']]
 
 global.mods = [] 
 global.prems = []
@@ -78,16 +78,16 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment	
 
-global.packname = '𝕮𝖔𝖓𝖊𝖗𝖔𝖘𝕻𝖔𝖘𝖙𝖎𝖛𝖊🦎'
-global.author = 'Not.Sxrgio🦎'
+global.packname = '𝐁𝐨𝐭𝐩𝐲<𝟑'
+global.author = 'Shomikaa🌷'
 
 // ES ➜ Está parte es para mostrar el contacto de alguien al usar #contacto
 // EN ➜ This part is to display someone's contact using #contact
 global.official = [ 
-['51977757632', 'Not.Sxrgio 💻', 1], 
-['51977757632', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-['51977757632', '𝗖𝘂𝘀𝘁𝗼𝗺𝗲𝗿 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 🥏', 1],
-['51977757632', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]] 
+['51918449789', 'Shomikaa🌷 💻', 1], 
+['51918449789', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
+['51918449789', '𝗖𝘂𝘀𝘁𝗼𝗺𝗲𝗿 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 🥏', 1],
+['51918449789', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]] 
 
 global.mail = '' //agrega tú correo
 global.desc = '' //agrega una descripción corta
@@ -97,12 +97,12 @@ global.country = '' //agrega tú país ejemplo: 🇪🇨
 global.vs = '1.0.2'
 global.vsJB = '4.0'
 
-global.gt = '𝕮𝖔𝖓𝖊𝖗𝖔𝖘𝕻𝖔𝖘𝖙𝖎𝖛𝖊🦎'
+global.gt = '𝐁𝐨𝐭𝐩𝐲<𝟑'
 global.yt = '-'
 global.yt2 = '-'
-global.ig = 'https://www.instagram.com/not.sxrgio'
+global.ig = 'https://www.instagram.com/py_esport_mixto?igshid=OGQ5ZDc2ODk2ZA=='
 global.md = '-'
-global.fb = 'https://www.facebook.com/qpaltacsm'
+global.fb = '-'
 
 global.nna = 'https://chat.whatsapp.com/IJ7KP1Q234m3Qg9F1jNf4Z' //UPDATE ConerosPositiveBot
 global.nna2 = 'https://chat.whatsapp.com/BX1wrclMH213NyyI70f8ZS' //Grupo Secundario
@@ -118,8 +118,8 @@ global.nnnttt4 = 'https://chat.whatsapp.com/IJ7KP1Q234m3Qg9F1jNf4Z' //Grupo 9 CO
 global.paypal = '-'
 global.asistencia = 'Wa.me/51977757632' //Dudas? escríbeme...
 
-global.wm = '𝕮𝖔𝖓𝖊𝖗𝖔𝖘𝕻𝖔𝖘𝖙𝖎𝖛𝖊🦎 : not.sxrgio'
-global.igfg = '𝕮𝖔𝖓𝖊𝖗𝖔𝖘𝕻𝖔𝖘𝖙𝖎𝖛𝖊🦎'
+global.wm = '𝐁𝐨𝐭𝐩𝐲<𝟑 : Shomikaa🌷'
+global.igfg = '𝐁𝐨𝐭𝐩𝐲<𝟑'
 global.wait = lenguajeGB['smsMeWait']()
 global.wait2 = lenguajeGB.smsWait()
 global.nomorown = owner[0][0]
